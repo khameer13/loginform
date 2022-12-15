@@ -1,0 +1,122 @@
+
+.gridcontainer {
+    border: 3px solid rgb(8, 0, 0);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 0%;
+    border-radius: 20px;
+    margin: 200px;
+  
+}
+
+.gitems1 {
+    margin: 1px;
+    height: 500px;
+}
+
+.gitems1 img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.gitems2 {
+    margin: 1px;
+    height: 500px;
+    background-color: rgb(215 227 249 / 29%);
+   
+}
+
+#g1 {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#g2 {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+/* div width full */
+.button {
+    width: 100%;
+    text-align: center;
+    padding-top: 35px;
+}
+
+/* button width short */
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+p {
+    text-align: center;
+}
+
+.imgcontainer {
+    text-align: center;
+
+}
+
+img.avatar {
+    width: 30%;
+    margin-top: 5px;
+
+    box-shadow: 0px 0px 3px #8f8f8f;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 8px;
+}
+
+
+/* responsive  */
+@media only screen and (max-width: 600px) {
+    .gridcontainer {
+        grid-template-columns: 1fr;
+      margin: 0px; 
+    
+    } 
+.gitems1 {
+    margin: 0px;
+    height: 0px;
+}
+    .gitems1 img {
+        display:none;
+    } 
+}
+
+@media only screen and (max-width: 750px) {
+    .gridcontainer {
+   margin: 0px;
+    }
+}
